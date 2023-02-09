@@ -1,0 +1,121 @@
+Microsoft Windows [Version 10.0.19044.2486]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>redis-cli
+127.0.0.1:6379> ping
+PONG
+127.0.0.1:6379> sadd Company name Tata_Consultancy_Services Infosys HCL_Technologies Wipro Redington_India_Ltd Larson_and_Toubro_Infotech_Ltd Mphasis_Ltd Mindtree_Ltd Hexaware_Technologies_Ltd
+(integer) 10
+127.0.0.1:6379> sadd Company Revenue_in_Cr 167311 1.02L 80000 65000 50000 40000 12000 10000 8000 5000
+(integer) 11
+127.0.0.1:6379> sadd Company Market_Value 900000 300000Cr 150000Cr 150000Cr 5000Cr 70000Cr 30000Cr 17000Cr 11855Cr 10000Cr
+(integer) 10
+127.0.0.1:6379> sadd Company Total_Employees 400000+ 230000+ 200000+ 150000+ 100000+ 125000+ 30000+ 21000 21000 18000
+(integer) 10
+127.0.0.1:6379> sadd Staff_Details HR'S Anupriya Banu Rajesh Nikin Manoj Raju Ram Ajay
+Invalid argument(s)
+127.0.0.1:6379>  sadd Staff_Details HR'S Anupriya Banu Rajesh Nikin Manoj Raju Ram Ajay
+Invalid argument(s)
+127.0.0.1:6379> sadd Staff_Details HR  Anupriya Banu Rajesh Nikin Manoj Raju Ram Ajay
+(integer) 9
+127.0.0.1:6379> sadd Staff_Details Basic_Pay 45000 42000 29000 63000 50000 46000 43520 48600
+(integer) 9
+127.0.0.1:6379> sadd Staff_Details Location Delhi Mumbai Madurai Goa Bangalore Chennai Ooty Telegana
+(integer) 9
+127.0.0.1:6379> sadd New_Ap : av_se 50 80 46 75 98 36 95 86 65 109
+(integer) 12
+127.0.0.1:6379> sadd New_Ap te_ids t78 t52 t56 t20 t56 t89 t59 t107 t64 t38
+(integer) 10
+127.0.0.1:6379> smembers Company
+ 1) "300000Cr"
+ 2) "Hexaware_Technologies_Ltd"
+ 3) "Wipro"
+ 4) "50000"
+ 5) "40000"
+ 6) "Total_Employees"
+ 7) "HCL_Technologies"
+ 8) "1.02L"
+ 9) "5000Cr"
+10) "Infosys"
+11) "167311"
+12) "8000"
+13) "Mindtree_Ltd"
+14) "Larson_and_Toubro_Infotech_Ltd"
+15) "10000"
+16) "10000Cr"
+17) "name"
+18) "Tata_Consultancy_Services"
+19) "Revenue_in_Cr"
+20) "80000"
+21) "17000Cr"
+22) "65000"
+23) "150000Cr"
+24) "Mphasis_Ltd"
+25) "5000"
+26) "70000Cr"
+27) "18000"
+28) "30000+"
+29) "200000+"
+30) "12000"
+31) "900000"
+32) "Redington_India_Ltd"
+33) "400000+"
+34) "11855Cr"
+35) "30000Cr"
+36) "150000+"
+37) "Market_Value"
+38) "230000+"
+39) "100000+"
+40) "125000+"
+41) "21000"
+127.0.0.1:6379> smembers Staff_Details
+ 1) "46000"
+ 2) "Location"
+ 3) "45000"
+ 4) "Rajesh"
+ 5) "Delhi"
+ 6) "48600"
+ 7) "Raju"
+ 8) "Madurai"
+ 9) "Manoj"
+10) "Banu"
+11) "63000"
+12) "Telegana"
+13) "Ram"
+14) "29000"
+15) "42000"
+16) "50000"
+17) "Bangalore"
+18) "Mumbai"
+19) "Chennai"
+20) "Anupriya"
+21) "Ajay"
+22) "Basic_Pay"
+23) "Ooty"
+24) "Goa"
+25) "HR"
+26) "43520"
+27) "Nikin"
+127.0.0.1:6379> smembers New_Ap
+ 1) "65"
+ 2) "95"
+ 3) "98"
+ 4) "av_se"
+ 5) "50"
+ 6) "t59"
+ 7) "46"
+ 8) "109"
+ 9) "36"
+10) "t52"
+11) "t56"
+12) "t20"
+13) "t38"
+14) "t89"
+15) "t107"
+16) "75"
+17) "80"
+18) "86"
+19) "t64"
+20) ":"
+21) "t78"
+22) "te_ids"
