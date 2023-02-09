@@ -6,14 +6,14 @@ Job Recuritment application is used to organize and manage the details of the co
 3) New_Ap av_se,te_ids
 
 The database should support three entity types: 
-> Company information, as‘Company’ 
-> Staff information, as ‘Staff_Details’
-> Appointments information, as ‘New_Ap’
+1) Company information, as‘Company’ 
+2) Staff information, as ‘Staff_Details’
+3) Appointments information, as ‘New_Ap’
 
 The data is stored as a set with entity name as set names and attribute name as key followed by values .Each set has over three attributes with values associated with it.
 
 Abbreviations used in this application:
 
- New_Ap - New Appointments 
- av_se  - Average seats available
- te_ids - Temporary Id's
+    New_Ap - New Appointments 
+    av_se  - Average seats available
+    te_ids - Temporary Id's
